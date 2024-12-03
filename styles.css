@@ -1,33 +1,52 @@
-/* Header */
-header {
-  background: #007BFF;
-  padding: 10px 0;
-}
-
-header .menu {
-  display: flex;
-  justify-content: center;
-}
-
-header .dropdown-menu {
-  display: none;
-}
-
-header .dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* General Styles */
+/* Fondo general */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #333;
 }
 
-.section {
-  padding: 20px;
-}
-
-.btn {
+/* Encabezado */
+header {
   background: #333;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #444;
   padding: 10px;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
