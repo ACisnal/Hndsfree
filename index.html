@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Encabezado -->
   <header>
-    <div class="container">
+    <div class="container header-container">
       <div class="logo">
         <h1>Plataforma</h1>
       </div>
@@ -17,7 +17,7 @@
         <ul class="menu">
           <li><a href="#hero">Inicio</a></li>
           <li class="dropdown">
-            <a href="#categories">Servicios</a>
+            <a href="#">Servicios</a>
             <ul class="dropdown-menu">
               <li><a href="#limpieza">Limpieza</a></li>
               <li><a href="#jardineria">Jardinería</a></li>
@@ -28,7 +28,7 @@
           <li><a href="#how-it-works">Cómo Funciona</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
-        <a href="#categories" class="btn">Explorar Servicios</a>
+        <a href="#categories" class="btn-primary">Explorar Servicios</a>
       </nav>
     </div>
   </header>
@@ -36,67 +36,73 @@
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero-container">
-      <h2>Encuentra el servicio que necesitas</h2>
-      <p>Profesionales confiables para todas tus necesidades personales y domésticas.</p>
-      <a href="#categories" class="btn">Explorar Servicios</a>
+      <h2>Encuentra el servicio perfecto para ti</h2>
+      <p>Profesionales confiables a tu disposición.</p>
+      <div class="search-bar">
+        <input type="text" placeholder="¿Qué servicio necesitas?">
+        <select>
+          <option value="">Selecciona una categoría</option>
+          <option value="limpieza">Limpieza</option>
+          <option value="jardineria">Jardinería</option>
+          <option value="chefs">Chefs Privados</option>
+          <option value="eventos">Organización de Eventos</option>
+        </select>
+        <button>Buscar</button>
+      </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Acerca de Nosotros</h2>
-      <p>Conecta con los mejores profesionales para realizar tus tareas domésticas y personales. Simplifica tu vida con nuestra plataforma.</p>
-    </div>
-  </section>
-
-  <!-- Categories Section -->
+  <!-- Servicios -->
   <section id="categories" class="section">
     <div class="container">
       <h2>Servicios Disponibles</h2>
-      <div class="categories-grid">
-        <div class="category">
-          <h3 id="limpieza">Limpieza</h3>
-          <p>Servicios de limpieza profesional para tu hogar u oficina.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="https://via.placeholder.com/300" alt="Limpieza">
+          <h3>Limpieza</h3>
+          <p>Servicios de limpieza profesional para tu hogar.</p>
         </div>
-        <div class="category">
-          <h3 id="jardineria">Jardinería</h3>
-          <p>Servicios de mantenimiento y diseño de jardines.</p>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/300" alt="Jardinería">
+          <h3>Jardinería</h3>
+          <p>Cuida y embellece tu jardín con expertos.</p>
         </div>
-        <div class="category">
-          <h3 id="chefs">Chefs Privados</h3>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/300" alt="Chefs Privados">
+          <h3>Chefs Privados</h3>
           <p>Disfruta de una experiencia culinaria única.</p>
         </div>
-        <div class="category">
-          <h3 id="eventos">Organización de Eventos</h3>
+        <div class="service-card">
+          <img src="https://via.placeholder.com/300" alt="Organización de Eventos">
+          <h3>Organización de Eventos</h3>
           <p>Convierte tus eventos en experiencias inolvidables.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works Section -->
+  <!-- Cómo Funciona -->
   <section id="how-it-works" class="section">
     <div class="container">
       <h2>Cómo Funciona</h2>
       <div class="steps">
         <div class="step">
           <h3>1. Explora Categorías</h3>
-          <p>Elige el servicio que necesitas navegando por nuestras categorías.</p>
+          <p>Encuentra el servicio que necesitas navegando por nuestras categorías.</p>
         </div>
         <div class="step">
           <h3>2. Selecciona un Profesional</h3>
-          <p>Encuentra el mejor profesional para tus necesidades.</p>
+          <p>Elige entre los mejores profesionales disponibles.</p>
         </div>
         <div class="step">
           <h3>3. Reserva Fácilmente</h3>
-          <p>Agenda el servicio de forma rápida y sencilla.</p>
+          <p>Agenda el servicio en pocos clics.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contacto -->
   <section id="contact" class="section">
     <div class="container">
       <h2>Contacto</h2>
@@ -112,7 +118,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer>
     <div class="container">
       <p>&copy; 2024 Plataforma de Servicios. Todos los derechos reservados.</p>
