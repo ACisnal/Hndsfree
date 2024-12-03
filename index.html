@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Servicios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Plataforma</h1>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#hero">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#categories">Servicios</a>
+            <ul class="dropdown-menu">
+              <li><a href="#limpieza">Limpieza</a></li>
+              <li><a href="#jardineria">Jardinería</a></li>
+              <li><a href="#chefs">Chefs Privados</a></li>
+              <li><a href="#eventos">Organización de Eventos</a></li>
+            </ul>
+          </li>
+          <li><a href="#how-it-works">Cómo Funciona</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <a href="#categories" class="btn">Explorar Servicios</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-container">
+      <h2>Encuentra el servicio que necesitas</h2>
+      <p>Profesionales confiables para todas tus necesidades personales y domésticas.</p>
+      <a href="#categories" class="btn">Explorar Servicios</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Acerca de Nosotros</h2>
+      <p>Conecta con los mejores profesionales para realizar tus tareas domésticas y personales. Simplifica tu vida con nuestra plataforma.</p>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="section">
+    <div class="container">
+      <h2>Servicios Disponibles</h2>
+      <div class="categories-grid">
+        <div class="category">
+          <h3 id="limpieza">Limpieza</h3>
+          <p>Servicios de limpieza profesional para tu hogar u oficina.</p>
+        </div>
+        <div class="category">
+          <h3 id="jardineria">Jardinería</h3>
+          <p>Servicios de mantenimiento y diseño de jardines.</p>
+        </div>
+        <div class="category">
+          <h3 id="chefs">Chefs Privados</h3>
+          <p>Disfruta de una experiencia culinaria única.</p>
+        </div>
+        <div class="category">
+          <h3 id="eventos">Organización de Eventos</h3>
+          <p>Convierte tus eventos en experiencias inolvidables.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <h2>Cómo Funciona</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Explora Categorías</h3>
+          <p>Elige el servicio que necesitas navegando por nuestras categorías.</p>
+        </div>
+        <div class="step">
+          <h3>2. Selecciona un Profesional</h3>
+          <p>Encuentra el mejor profesional para tus necesidades.</p>
+        </div>
+        <div class="step">
+          <h3>3. Reserva Fácilmente</h3>
+          <p>Agenda el servicio de forma rápida y sencilla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Plataforma de Servicios. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
